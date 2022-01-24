@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+    background-color: #bc4749;
+}
+
+h1 {
+    margin: 0;
+}
+
+.image-button img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.loading-header {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+}
+
+.header {
+    display:none;
+    color: rgb(231, 230, 230);
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.container {
+    display: none;
+}
+
+.settings {
+    display: none;
+    margin: 20px;
+}
+
+.settings button {
+    margin: 10px 10px;
+    width: fit-content;
+    font-size: 1.1rem;
+}
+
+.game-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+}
+
+.image-button {
+    background: url("../images/question-mark.png");
+    background-size: cover;
+    background-color: tan;
+    height: 8rem;
+    width: 8rem;
+    border-width: 5px;
+    border-color: #231F20;
+    border-radius: 40px;
+    margin: 0;
+    padding: 15px;
+}
+
+.placeholder {
+    background-color: #833a78;
+}
+
+@media screen and (max-width: 668px) {
+    .image-button {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 767px) {
+    .image-button {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .image-button {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 0 200px;
+    }
+}
